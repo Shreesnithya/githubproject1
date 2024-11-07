@@ -19,7 +19,7 @@ To create a responsive website, add the following <meta> tag to all your web pag
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
 </head>
 <body>
 
@@ -28,6 +28,7 @@ To create a responsive website, add the following <meta> tag to all your web pag
 
 </body>
 </html>
+-->
 
 <!--
 This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.-->
@@ -53,7 +54,7 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 <h2>Responsive Image</h2>
 <p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
 
-<img src="assets/images/shopping.webp" style="width:100%;">
+<img src="c:\Users\Admin\OneDrive\Pictures\resume.png" style="width:100%;">
 
 </body>
 </html>
@@ -78,7 +79,7 @@ If the max-width property is set to 100%, the image will scale down if it has to
 <p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
 <p>Resize the browser window to see the effect.</p>
 
-<img src="assets/images/shopping.webp" style="max-width:100%;height:auto;">
+<img src="c:\Users\Admin\OneDrive\Pictures\resume.png" style="max-width:100%;height:auto;">
 
 </body>
 </html>
@@ -92,7 +93,6 @@ The HTML <picture> element allows you to define different images for different b
 
 Resize the browser window to see how the image below changes depending on the width:-->
 
-<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,12 +104,11 @@ Resize the browser window to see how the image below changes depending on the wi
 <p>Resize the browser width and the image will change at 600px and 1500px.</p>
 
 <picture>
-  <source srcset="assets/images/small_kite.png" 
-  media="(max-width: 600px)"> 
+  <source srcset="c:\Users\Admin\Downloads\small_kite.png" media="(max-width: 600px)"> 
   
-  <source srcset="assets/images/kite.png" media="(max-width: 1500px)">
+  <source srcset="c:\Users\Admin\Downloads\kite-big.jfif" media="(max-width: 1500px)">
 
-  <img src="assets/images/kite.png" alt="Flowers" style="width:auto;">
+  <img src="c:\Users\Admin\Downloads\small_kite.png" alt="Resume" style="width:auto;">
 </picture>
 
 </body>

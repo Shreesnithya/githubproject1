@@ -1,0 +1,117 @@
+<!--
+Responsive web design is about creating web pages that look good on all devices!
+
+A responsive web design will automatically adjust for different screen sizes and viewports.-->
+
+<!---
+What is Responsive Web Design?
+
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):-->
+
+<!--
+Setting The Viewport
+
+To create a responsive website, add the following <meta> tag to all your web pages:
+
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Setting the Viewport</h2>
+<p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
+
+</body>
+</html>
+
+<!--
+This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.-->
+
+
+<!--
+Responsive Images
+
+Responsive images are images that scale nicely to fit any browser size.
+
+Using the width Property
+
+If the CSS width property is set to 100%, the image will be responsive and scale up and down:-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+<img src="assets/images/shopping.webp" style="width:100%;">
+
+</body>
+</html>
+-->
+
+
+
+<!--
+Using the max-width Property
+
+If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<img src="assets/images/shopping.webp" style="max-width:100%;height:auto;">
+
+</body>
+</html>
+-->
+
+
+
+<!--
+Show Different Images Depending on Browser Width
+The HTML <picture> element allows you to define different images for different browser window sizes.
+
+Resize the browser window to see how the image below changes depending on the width:-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="assets/images/small_kite.png" 
+  media="(max-width: 600px)"> 
+  
+  <source srcset="assets/images/kite.png" media="(max-width: 1500px)">
+
+  <img src="assets/images/kite.png" alt="Flowers" style="width:auto;">
+</picture>
+
+</body>
+</html>
+-->
